@@ -19,9 +19,8 @@ This work uses the [LENS OneWeb dataset](https://github.com/clarkzjw/LENS), a LE
 
 | Script | Description |
 |--------|-------------|
-| `Step6_PatchTST.py` | PatchTST model training |
-| `Step6b_Extract_Embeddings.py` | 256-dim embedding extraction from trained encoder |
-| `Step7b_Embedding_Classifier.py` | XGBoost three-class classifier |
+| `PatchTST.py` | PatchTST model training |
+| `Classifier_Evaluation.py` | XGBoost three-class classifier + end-to-end evaluation |
 
 ## Requirements
 
