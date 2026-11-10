@@ -15,7 +15,7 @@ A two-stage prediction framework that forecasts short-term RTT and classifies up
 
 ## Dataset
 
-This work uses the [LENS OneWeb dataset](DATASET_URL_HERE), a LEO satellite network measurement dataset collected from a residential OneWeb terminal deployed in Iowa (March–May 2025). The dataset provides modem-level RTT measurements at 10 ms resolution and Antenna Interface Module (AIM) logs.
+This work uses the [LENS OneWeb dataset]((https://github.com/clarkzjw/LENS)), a LEO satellite network measurement dataset collected from a residential OneWeb terminal deployed in Iowa (March–May 2025). The dataset provides modem-level RTT measurements at 10 ms resolution and Antenna Interface Module (AIM) logs.
 
 ## Pipeline
 
