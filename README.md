@@ -19,7 +19,7 @@ This work uses the [LENS OneWeb dataset](https://github.com/clarkzjw/LENS), a LE
 
 | Script | Description |
 |--------|-------------|
-| `PatchTST.py` | PatchTST model training |
+| `PatchTST.ipynb` | PatchTST model training |
 | `Classifier_Evaluation.py` | XGBoost three-class classifier + end-to-end evaluation |
 
 ## Requirements
