@@ -1,1 +1,48 @@
 # leo-rtt-prediction
+
+# RTT-Based Congestion and Handover Prediction for LEO Satellite Networks
+
+This repository contains the source code for the paper:
+
+> R. Khanfar, B. Al Homssi, and M. Saad, "RTT-Based Congestion and Handover Prediction for LEO Satellite Networks," in Proc. BAI, 2027.
+
+## Overview
+
+A two-stage prediction framework that forecasts short-term RTT and classifies upcoming events into Normal, Handover, or Congestion in LEO satellite networks.
+
+- **Stage 1:** PatchTST encoder for RTT forecasting and event probability gating
+- **Stage 2:** XGBoost classifier for three-class event classification
+
+## Dataset
+
+This work uses the [LENS OneWeb dataset](DATASET_URL_HERE), a LEO satellite network measurement dataset collected from a residential OneWeb terminal deployed in Iowa (March–May 2025). The dataset provides modem-level RTT measurements at 10 ms resolution and Antenna Interface Module (AIM) logs.
+
+## Pipeline
+
+| Script | Description |
+|--------|-------------|
+| `Step6_PatchTST.py` | PatchTST model training |
+| `Step6b_Extract_Embeddings.py` | 256-dim embedding extraction from trained encoder |
+| `Step7b_Embedding_Classifier.py` | XGBoost three-class classifier |
+
+## Requirements
+
+- Python 3.10+
+- PyTorch
+- XGBoost
+- NumPy, Pandas, Scikit-learn
+
+## Citation
+
+```bibtex
+@inproceedings{khanfar2027rtt,
+  title={RTT-Based Congestion and Handover Prediction for LEO Satellite Networks},
+  author={Khanfar, Rawan and Al Homssi, Bassel and Saad, Mohamed},
+  booktitle={Proc. BAI},
+  year={2027}
+}
+```
+
+## License
+
+MIT
